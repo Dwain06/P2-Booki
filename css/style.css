@@ -1,0 +1,663 @@
+/* Eléments principaux de la page */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.bloc_page{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1400px;
+}
+
+h1{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+.sans_puce{
+    list-style-type: none;
+}
+
+.vignette{
+    margin: 0 10px 20px 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px rgb(199, 199, 199);
+    background-color: white;
+}
+
+figcaption{
+    padding: 10px;
+}
+
+figcaption h2, figcaption p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+
+/* Header */
+
+#en-tete img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100px;
+    position: relative;
+    left: -18px;
+}
+
+#en-tete h1{
+    margin-bottom: 4px;
+}
+
+#en-tete h2{
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+nav{
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+nav ul{
+    width: 230px;
+    justify-content: space-between;
+}
+
+nav a{
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+
+/* Zone de recherche - Barre de recherche */
+
+#barre_recherche{
+    margin-bottom: 35px;
+}
+
+#recherche_texte {
+    padding: 10px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    font-weight: 700;
+    position: relative;
+    left: -4.5px;
+}
+
+#recherche_bouton_desktop {
+    padding: 11px 15px 11px 15px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    left: -9px;
+}
+
+#recherche_bouton_desktop:hover{
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+#recherche_bouton_mobile{
+    display: none;
+}
+
+.fa-location-dot{
+    padding: 12px 15px 12px 20px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    font-size: 12px;
+    position: relative;
+    top: 0.5px;   
+}
+
+
+/* Zone de recherche - Filtres */
+
+#filtres{
+    align-items: baseline;
+}
+
+#filtres h2{
+    padding-right: 30px;
+}
+
+#filtres ul{
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+#filtres li a{
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+#filtres li a:hover{
+    border: 1px solid #DEEBFF;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+#filtres i{
+    margin-right: 2px;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    position: relative;
+    left: -12px;
+}
+
+#recherche p{
+    margin-bottom: 15px;
+}
+
+#info{
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.fa-info{
+    margin-right: 5px;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    color: #0065FC;
+    font-size: 10px;
+}
+
+
+/* Section hébergements */
+
+#hebergements{
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.prix{
+    font-weight: 700;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+
+.fa-star-grey{
+    color: grey;
+}
+
+/* Section hébergements - Hébergements à Marseille */
+
+#hebergements_marseille{
+    padding: 3%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 70%;
+}
+
+#hebergements_marseille a{
+    font-weight: 700;
+}
+
+#tous_hebergements_marseille{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#tous_hebergements_marseille img{
+    padding: 3px;
+    border-radius: 15px 15px 0 0;
+    height: 115px;
+    width: 240px;
+    object-fit: cover;
+}
+
+
+/* Section hébergements - Les plus populaires */
+
+#hebergements_populaires{
+    margin-left: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    width: 33%;
+    min-width: 330px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#titre_hebergements_populaires{
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements_populaires img{
+    padding: 3px;
+    border-radius: 15px 0 0 15px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+#hebergements_populaires figcaption{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Section activités */
+
+#activites_marseille{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#activites h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#activites img{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.double_vignettes{
+    width: 24%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.simple_vignette{
+    width: 24%;
+}
+
+.hauteur100{
+    height: 350px;
+    width: 100%;
+}
+
+.hauteur60{
+    height: 170px;
+    width: 100%;
+}
+
+.hauteur50{
+    height: 135px;
+    width: 100%;
+}
+
+.hauteur40{
+    height: 112px;
+    width: 100%;
+}
+
+
+/* Footer */
+
+#fond_pied_page{
+    background-color: #F2F2F2;
+}
+
+#pied_page{
+    padding: 15px 20px 0 25px;
+    justify-content: space-between;
+}
+
+#pied_page ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#pied_page li{
+    padding-bottom: 10px;
+    padding-right: 150px;
+}
+
+
+/* Affichage Tablette */
+@media screen and (max-width: 992px) and (min-width: 769px){
+
+    /* Eléments principaux de la page */
+
+    .bloc_page{
+        padding: 15px 40px 15px 40px;
+    }
+
+    .vignette{
+        width: 550px;
+    }
+
+
+    /* Section hébergements */
+
+    #hebergements{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    #hebergements a{
+        margin: auto;
+    }
+
+    #hebergements_marseille, #hebergements_populaires{
+        margin-left: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 0;
+        width: auto;
+    }
+
+    #plus{
+        padding-left: 140px;
+    }
+
+
+    /* Section hébergements - Les plus populaires */
+    
+    #hebergements_populaires img{
+        height: 140px;
+        width: 140px;
+    }
+
+
+    /* Section hébergements - Hébergements à Marseille */
+
+    #hebergements_marseille{
+        background: none;
+    }
+
+    #tous_hebergements_marseille{
+        flex-direction: column;
+    }
+
+    #tous_hebergements_marseille img{
+        height: 130px;
+        width: 100%;
+    }
+    
+
+    /* Section activités */
+
+    #activites_marseille{
+        flex-wrap: wrap;
+    }
+
+    .double_vignettes, .simple_vignette{
+        margin: auto;
+        width: auto;
+    }
+
+    .hauteur100, .hauteur60, .hauteur50, .hauteur40{
+        height: 130px;
+        width: 100%;
+    }
+
+}
+
+/* Affichage Smartphone */
+@media screen and (max-width: 768px){
+
+    /* Eléments principaux de la page */
+
+    .bloc_page{
+        padding: 15px;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+    }
+
+    body{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .vignette{
+        margin-right: 0;
+    }
+
+
+    /* Header */
+
+    #en-tete{
+        padding: 0;
+    }
+
+    #en-tete img{
+        margin: 0px;
+        padding: 0;
+        width: 130px;
+        left: 0;
+    }
+
+    #en-tete h1{
+        margin: 40px 15px 15px 15px;
+    }
+
+    #en-tete h2{
+        margin: 20px 15px 15px 15px;
+        font-size: 18px;
+    }
+
+
+    /* Navigation */
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    nav ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li{
+        width: 50%;
+        text-align: center;
+    }
+
+    nav a{
+        padding-bottom: 30px;
+        border-bottom: 3px solid #F2F2F2;
+        display: block;
+    }
+
+    nav a:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+
+    /* Zone de recherche - Barre de recherche */
+
+    #barre_recherche{
+        text-align: center;
+    }
+    
+    #recherche_texte{
+        outline: none;
+        font-size: 17px;
+        padding: 13px 9px 10.5px 5px;
+    }
+
+    #recherche_bouton_mobile{
+        padding: 14px 15px 11px 15px;
+        border-radius: 14px;
+        border: none;
+        background-color: #0065FC;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        left: -16px;
+        display: inline-block;
+    }
+
+    #recherche_bouton_mobile:hover{
+        background-color: #DEEBFF;
+        color: #0065FC;
+    }
+
+    #recherche_bouton_desktop{
+        display: none;
+    }
+
+    .fa-location-dot{
+        font-size: 22px;
+    }
+
+
+    /* Zone de recherche - Filtres */
+
+    #filtres h2{
+        margin: 5px 0 0 5px;
+    }
+
+    #filtres li{
+        margin: 0 20px 20px 0;
+        font-size: 18px;
+    }
+
+    #info p{
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .fa-info{
+        margin: 0 5px 0 0;
+        font-size: 14px;
+    }
+
+    
+    /* Section hébergements */
+
+    #hebergements{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    #hebergements_marseille, #hebergements_populaires{
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 0;
+        width: auto;
+    }
+
+
+    /* Section hébergements - Les plus populaires */
+
+    #hebergements_populaires figure{
+        flex-wrap: nowrap;
+    }
+
+    #hebergements_populaires img{
+        height: 140px;
+        width: 140px;
+    }
+
+
+    /* Section hébergements - Hébergements à Marseille */
+
+    #hebergements_marseille{
+        background: none;
+    }
+
+    #tous_hebergements_marseille{
+        flex-direction: column;
+    }
+
+    #tous_hebergements_marseille img{
+        height: 130px;
+        width: 100%;
+    }
+
+    #plus{
+        font-size: 20px;
+    }
+
+    
+    /* Section activités */
+
+    #activites h1{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    #activites_marseille{
+        flex-direction: column;
+    }
+
+    .hauteur100, .hauteur60, .hauteur50, .hauteur40{
+        height: 130px;
+        width: 100%;
+    }
+
+    .double_vignettes, .simple_vignette{
+        width: auto;
+    }
+
+
+    /* Footer */
+
+    #pied_page{
+        flex-direction: column;
+    }
+
+}
