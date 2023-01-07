@@ -6,7 +6,7 @@
 ## Objectif
 Réaliser un prototype en intégrant la maquette proposée, en HTML et CSS pour Booki, une petite entreprise offrant un outil de planification de vacances .
 
-## Livraibles demandés :
+## Livrables demandés :
 #### Spécifications fonctionnelles
 - Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est un champ de saisie, le texte doit donc pouvoir être édité par l’utilisateur. Il faut englober ce champ dans un formulaire pour que ce dernier soit valide auprès du W3C. La partie recherche ne doit pas être fonctionnelle.
 - Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité (pas uniquement le titre). Pour l’instant, les liens sont vides. On peut utiliser un attribut `href=”#”` pour simuler la
